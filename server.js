@@ -2,16 +2,12 @@ const express = require('express');
 const res = require('express/lib/response');
 const app = express();
 const mongoose = require('mongoose');
-const covid = require('./index');
 const { create } = require('./models/Thread');
 const PORT = 3000;
 const Thread = require('./models/Thread');
 app.use(express.json());
-app.use(covid);
-app.use(express.static('public'));
 
 require('dotenv').config();
-
 
   mongoose
   .connect(process.env.MONGO_URL, {
