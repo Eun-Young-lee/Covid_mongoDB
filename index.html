@@ -124,9 +124,40 @@
       <ul class="search__result"></ul> 
         </div><!--search_main-->                 
     <div class="search__map"></div>         
-  </div>   <!--container-->     
-     </div>    <!--part2-->   
-     <div class ="container-fluid">
-  </section>         
- </body>
+  </div>   
+  <!--container-->     
+     </div>    
+     <!--part2-->   
+     <div class="board">
+      <div class="board-section">
+        <div style="display:inline-block">
+          <img src="./img/speak.png" style="max-width: 20%; height: auto; ">
+          <div style="display:inline-block;">
+            <h2>NOTICE BOARD</h2>
+          </div>
+        </div>
+        <div class="thread-section">
+        </div>
+
+        <div class="container">
+          <form class="form-section">
+            <div class="mb-3">
+              <label class="form-label">Title</label>
+              <input type="text" class="form-control" placeholder="title" id="inputTitle" />
+
+              <div class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Content</label>
+              <textarea id="inputContent" placeholder="write" class="form-control" rows="10" cols="30"></textarea>
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-primary mb-4">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
